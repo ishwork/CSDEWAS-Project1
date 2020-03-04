@@ -1,0 +1,50 @@
+body{
+    width: 90%;
+    margin: auto;
+}
+button{
+    margin: 15px 15px 15px 15px;
+    width: 90px;
+    height: 30px;
+    font-size:15px;
+}
+#decode{
+    margin-left:8%;
+    display: inline-block;
+}
+
+#hide{
+    margin-left: 50px;
+    float: right;
+    display: inline-block;
+}
+
+#information {
+    width: auto;
+    min-height: 400px;
+    border: 1px solid black;
+}
+
+.column{
+    float:left;
+    margin: 25px 25px 60px 25px;
+}
+/* Properties set for left column*/
+.left{
+    width:40%;
+
+}
+
+/* Properties set for right column*/
+.right{
+    width:40%;
+}
+
+/*Setting a canvas for barcode*/
+canvas{
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+

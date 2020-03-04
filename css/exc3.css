@@ -1,0 +1,102 @@
+/* Includes box sizing in all classes */
+* {
+    box-sizing: border-box;
+}
+/* Insert some text after the content of each row class */
+.row::after {
+    content: "";
+    clear: both;
+}
+
+/* class for first Row */
+.row1{
+    padding:50px;
+}
+
+/* class for second Row */
+.row2{
+    padding-left:50px;
+    padding-right:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* class for third Row */
+.row3{
+    padding:50px;
+    padding-top:0px !important;
+    margin-top: 100px;
+}
+
+/* Adjust width for different contents in webpage based */
+.col-1 {width: 8.33%; float:left;}
+.col-2 {width: 16.66%; float:left;}
+.col-3 {width: 25%; float:left;}
+.col-4 {width: 33.33%; float:left;}
+.col-5 {width: 41.66%; float:left;}
+.col-6 {width: 50%; float:left;}
+.col-7 {width: 58.33%;float:left;}
+.col-8 {width: 66.66%; float:left;}
+.col-9 {width: 75%; float:left;}
+.col-10 {width: 83.33%; float:left;}
+.col-11 {width: 91.66%; float:left;}
+.col-12 {width: 100%; float:left;}
+
+/* Set font for whole document */
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+/* Select field styling */
+select{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* class for Label on left side of input field */
+.label {
+    padding: 12px 20px;
+    padding-left:0px !important;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* class for buttons */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Customize individual buttons */
+.bus-btn {background-color: darkgray; float:left;}
+.route-btn {background-color: darkgray; float:right;}
+.rfrsh-btn {background-color: darkgray; color: black; margin: 0 40%;}
+
+/* class for div containing map */
+.mapdiv{
+    height:600px;
+}
+
+/* Map styling */
+#map {
+    height: 100%;
+    width: 100%;
+    float:left;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+

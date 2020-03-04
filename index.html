@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="css/exc1.css" type="text/css">
+    <script type="text/javascript" src="js/exc1.js"></script>
+</head>
+
+<body>
+<!--Horizontal menu bar-->
+<div class="horizontal_menu_bar">
+    <ul class="horizontal_menu">
+        <li><a href=#File>File</a></li>
+        <li><a href=#Edit>Edit</a></li>
+        <li><a href=#View>View</a></li>
+        <li><a href=#Help>Help</a></li>
+    </ul>
+</div>
+
+<!-- creating vertical menu bar-->
+<div class="vertical_menu_bar">
+    <ul class = "vertical_menu">
+        <li><a href="#Exercise1">Exercise1</a></li>
+        <li><a href="Exercise 2/exc2.html">Exercise2</a></li>
+        <li><a href="Exercise 3/exc3.html">Exercise3</a></li>
+    </ul>
+</div>
+
+<!-- creating animated banner-->
+<div class="animation_div">
+    <div class="animation_pic" >
+        <img class="top" src="Exercise1/images/helsinki.jpg"/>
+        <img class="bottom" src="Exercise1/images/turku.jpg"/>
+    </div>
+
+    <!-- creating div for a animation picture-->
+    <div class="animation_para">
+        <div class="animation_para_left">
+            <p>
+                Turku is a city on the southwest coast of Finland at the mouth of the Aura River.
+                Turku, with its surrounding municipalities, is an energetic centre of growth in the
+                Baltic Sea area. The versatile livelihood structure, top class selection of education,
+                culture, and services, as well as the beautiful archipelago, form a magnetic combination
+                in Turku.
+            </p>
+        </div>
+
+        <!-- creating right div for a paragraph-->
+        <div class="animation_para_right">
+            <p>
+                Helsinki is the Capital of Finland and the centre of the Helsinki Region.
+                It is the capital and most populous city of Finland and located on the shore
+                of the Gulf of Finland. Together with the cities of Espoo, Vantaa, and Kauniainen,
+                and surrounding commuter towns,[11] Helsinki forms the Greater Helsinki metropolitan area
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<!-- creating a div for a panoramic picture-->
+<div class ="panorama_div">
+
+    <div class="panorama">
+        <img id="panorama_pic" src="Exercise1/images/hongkong_panorama_pic.jpg">
+    </div>
+    <!-- creating a div for a paragraph for panorama-->
+    <div class="panorama_para">
+        <p>
+            It is a panoramic picture. It is an island in the southern part of Hong Kong and has a population
+            of 1,289,500. For visitors, there are so many things to do on the island from visiting various
+            points of interests, going shopping in grand malls to enjoying delicious local foods.
+        </p>
+    </div>
+</div>
+
+<!-- creating div container for dragging and dropping the image-->
+<div class="drag_drop_div">
+    <!-- creating a div for dropping image on the left side-->
+    <div class="drop_pic_left" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <!-- creating a div for a draggable image on the center of the main div-->
+    <div class="drag_pic" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="Exercise1/images/helsinki.jpg" draggable="true" ondragstart="drag(event)" id="draggable_pic">
+    </div>
+
+    <!-- creating a div for dropping image on the left side-->
+    <div class="drag_drop_right" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>
+</body>
+</html>

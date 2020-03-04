@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="../css/exc2.css">
+</head>
+
+<body>
+<!--Taking user input for virtual bar code-->
+<p>Virtual bar code:&nbsp;<input type="text" id="invoice" size="30" placeholder="Enter your virtual code here"></p>
+<div>
+    <button id="decode">Decode</button>
+    <button id="hide">Hide</button>
+</div>
+
+<!--Generating information using the virtual bar code-->
+<div id="information">
+    <div>
+        <div class="column left">
+            <p>Payee's IBAN:&nbsp;<span id="account"></span></p>
+            <p>Payment reference:&nbsp;<span id="reference"></span></p>
+        </div>
+        <div class="column right">
+            <p>Amount to be paid:&nbsp;<span id="amount"></span></p>
+            <p>Due date:&nbsp;<span id="date"></span></p>
+        </div>
+    </div>
+    <!--Creating canvas for barcode-->
+    <div>
+        <canvas id="barcode"></canvas>
+    </div>
+
+</div>
+
+<script src="../js/exc2.js"></script>
+<script src="../js/JsBarcode.code128.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--jquery to hide/show the information-->
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $(this).text(function(i,v){
+                $("#information").toggle("slow");
+                return v === 'Hide' ? 'Show' : 'Hide'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
